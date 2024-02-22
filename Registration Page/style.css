@@ -1,0 +1,130 @@
+:root::-webkit-scrollbar{display: none;}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    list-style-type: none;
+    background: rgb(33, 29, 29);
+    color: white;
+}
+.hd{
+    border: 1px solid rgb(151, 217, 151);
+    background: rgb(151, 217, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+    color: black;
+}
+.hd h1{
+    text-align: center;
+}
+.block1{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px 10px 10px;
+    flex-wrap: wrap;
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+}
+.lbl{
+    margin: 10px;
+}
+.IP{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+    padding: 0px 0px 5px 5px;
+    margin: 10px;
+    width: 200px;
+    background: rgb(33, 29, 29);
+    color: white;
+}
+.b2{
+    display: flex;
+    flex-direction: column;
+}
+.b2 div{
+    margin: 5px;
+}
+.IP:focus{outline: none;}
+.sbtn{
+    width: 20vmax;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(151, 217, 151);
+    border: 1px solid rgb(151, 217, 151);
+    cursor: pointer;
+}
+.box{
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: 160px;
+    overflow: scroll;
+}
+.box::-webkit-scrollbar{display: none}
+.LI{
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 5px 5px 5px;
+}
+.PLI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.DLT{
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    background: rgb(151, 217, 151);
+    border: 1px solid rgb(151, 217, 151);
+    cursor: pointer;
+}
+.EDT{
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    background: rgb(151, 217, 151);
+    border: 1px solid rgb(151, 217, 151);
+    cursor: pointer;
+}
+@media screen and (max-width: 425px){
+    .hd h1{
+        font-size: 25px;
+    }
+}
+@media screen and (width <= 920px) and (width >= 697px){
+    .block1{
+        flex-wrap: nowrap;
+    }
+    .IP{
+        width: 140px;
+    }
+}
+@media screen and (max-width: 950px){
+    .LI{
+        flex-wrap: wrap;
+    }
+}

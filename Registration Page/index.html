@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Student Registration Form - Atish Kumar Sahu, Atish Kumar Sahu, HTML5, CSS3, JavaScript, LocalStorage, Netlify Hosting, Github">
+    <meta name="keywords" content="Student Registration Form - Atish Kumar Sahu, Atish Kumar Sahu, HTML5, CSS3, JavaScript, LocalStorage, Netlify Hosting, Github">
+    <meta name="author" content="Atish Kumar Sahu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Student Form - Atish K Sahu</title>
+</head>
+<body>
+    <div class="hd"><h1>Registration Form</h1></div>
+    <form class="FORM" onsubmit="formdata(event)">
+        <div class="block1">
+            <div class="b1">
+                <label class="lbl">Candidate ID:</label>
+                <input type="text" id="CANID" class="IP" placeholder="Candidate ID" pattern="[0-9]+" title="Candidate ID Value" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">Candidate Roll:</label>
+                <input type="text" id="CANROLL" class="IP" placeholder="Candidate Roll" pattern="[0-9]+" title="Candidate Roll Value" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">Candidate Name:</label>
+                <input type="text" id="CANNAME" class="IP" placeholder="Candidate Name" pattern="[A-Za-z0-9\s]+" title="Candidate Name" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">Candidate Mail:</label>
+                <input type="text" id="CANMAIL" class="IP" placeholder="Candidate Mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Candidate Mail" required>
+            </div>
+        </div>
+        <div class="block1">
+            <div class="b1">
+                <label class="lbl">City Name:</label>
+                <input type="text" id="CITY" class="IP" placeholder="City Name" pattern="[A-Za-z0-9\s]+" title="City Name" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">State Name:</label>
+                <input type="text" id="STATE" class="IP" placeholder="State Name" pattern="[A-Za-z0-9\s]+" title="State Name" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">Country Name:</label>
+                <input type="text" id="COUNTRY" class="IP" placeholder="Country Name" pattern="[A-Za-z0-9\s]+" title="Country Name" required>
+            </div>
+            <div class="b1">
+                <label class="lbl">Birth Date:</label>
+                <input type="date" id="BIRTH" class="IP IP1" title="Enter Birth Date" required>
+            </div>
+        </div>
+        <div class="block1">
+            <div class="b2">
+                <label class="lbl">Gender:</label>
+                <div>
+                    <input type="radio" name="Male" id="MLE" value="Male" onclick="funcgender1()">
+                    <label>Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="Female" id="FLE" value="Female" onclick="funcgender2()">
+                    <label>Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="Not" id="NOT" value="Not" onclick="funcgender3()">
+                    <label>Prefer Privacy</label>
+                </div>
+            </div>
+            <div class="b2">
+                <label class="lbl">Services:</label>
+                <div>
+                    <input type="checkbox" name="Library" id="LIB" value="Library" onclick="funcservice()">
+                    <label>Library Service</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Hostel" id="HSTL" value="Hostel" onclick="funcservice()">
+                    <label>Hostel Service</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Club" id="CLB" value="Club" onclick="funcservice()">
+                    <label>Club Service</label>
+                </div>
+            </div>
+            <div class="b2">
+                <label class="lbl">Branch:</label>
+                <select name="BRANCH" id="BRC" class="FCLS IP">
+                    <option hidden></option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Computer Application">Computer Application</option>
+                    <option value="Basic Computer">Basic Computer</option>
+                </select>
+            </div>
+        </div>
+        <div class="block1">
+            <input type="submit" value="Submit Form" class="sbtn">
+        </div>
+    </form>
+    <div class="box">
+        <ul id="ULL">
+            <!-- <li class="LI">
+                <p class="PLI">
+                    1| 1 | A | A@mail.com | C | S | C | 20-10-2023 | Male | Club | CSE
+                </p>
+                <button>Edit</button>
+                <button>Delete</button>
+            </li> -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
